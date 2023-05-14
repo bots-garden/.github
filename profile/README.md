@@ -14,24 +14,10 @@
 
 ### To Read
 
-#### Capsule
-
 - [Capsule: the WASM runners project](https://k33g.hashnode.dev/capsule-the-wasm-runners-project)
-
-#### Wazero
-
 - [Wazero First Steps](https://k33g.hashnode.dev/series/wazero-first-steps)
-
-#### Wazi
-
 - [WASI and Node.js](https://k33g.hashnode.dev/series/wasi-nodejs)
-
-#### Grain
-
 - [Grain First Steps](https://k33g.hashnode.dev/series/grain)
-
-#### Extism
-
 - [Run WASM functions from Vert-x & Kotlin thanks to Extism](https://k33g.hashnode.dev/run-wasm-functions-from-vert-x-kotlin-thanks-to-extism)
 
 ##### Old
