@@ -1,32 +1,55 @@
 ## Bots.Garden 🤖🌼
 
-<!--
+Bots Garden is the house of various **[wasm](https://webassembly.org/)** and **[wasi](https://wasi.dev/)** experiments
 
-**Here are some ideas to get you started:**
+The (most) active project of Bots Garden is **[Simplism](https://github.com/bots-garden/simplism)**: a cloud-native runtime for [Extism](https://extism.org/) **wasm** plug-ins.
+> A tiny HTTP server for Extism wasm Plug-ins
 
-🙋‍♀️ A short introduction - what is your organization all about?
-🌈 Contribution guidelines - how can the community get involved?
-👩‍💻 Useful resources - where can the community find your docs? Is there anything else the community should know?
-🍿 Fun facts - what does your team eat for breakfast?
-🧙 Remember, you can do mighty things with the power of [Markdown](https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
--->
+Simplism is developed in Go with **[Wazero](https://wazero.io/)**[^1] as the Wasm runtime and **[Extism](https://extism.org/)**[^2], which offers a Wazero-based Go SDK and a Wasm plugin system.
 
 
-### To Read
+There are two satellite projects of Simplism:
 
-- [Capsule: the WASM runners project](https://k33g.hashnode.dev/capsule-the-wasm-runners-project)
-- [Wazero First Steps](https://k33g.hashnode.dev/series/wazero-first-steps)
-- [WASI and Node.js](https://k33g.hashnode.dev/series/wasi-nodejs)
-- [Grain First Steps](https://k33g.hashnode.dev/series/grain)
+- [Simplism Builder](https://github.com/bots-garden/simplism-builder): a Docker Compose project bringing all the necessary tools to build WASM Extism plug-ins for Simplism.
+- [Simplism IDE](https://github.com/bots-garden/simplism-ide): A "local cloud development environment" (with Docker Compose) to develop Extism plug-ins for Simplism without the need to install all the "complicated things".
+
+## Blog posts
+
+### Wazero
+
+- Series: [Wazero, first steps](https://k33g.hashnode.dev/series/wazero-first-steps)
+  - Wazero Cookbook - Part One: WASM function & Host application
+  - Wazero Cookbook - Part Two: Host functions
+
+### Extism
+
+- Series: [Discovery of Extism (The Universal Plug-in System)](https://k33g.hashnode.dev/series/extism-discovery)
+  - Extism & WebAssembly Plugins
+  - Extism, WebAssembly Plugins & Host Functions
+  - WebAssembly Plugin in JavaScript with Extism
+  - Run Extism WebAssembly plugins from a Go application
+  - Writing Wasm MicroServices with Node.js and Extism
+  - Write a host function with the Extism Host SDK
+  - Writing Host Functions in Go with Extism
+  - Create a Webassembly plugin with Extism and Rust
+  - WASM Microservices with Extism and Fiber
+  - Extism Go SDK is now written on top of Wazero
 - [Run WASM functions from Vert-x & Kotlin thanks to Extism](https://k33g.hashnode.dev/run-wasm-functions-from-vert-x-kotlin-thanks-to-extism)
 
-##### Old
-- [Create a GitLab bot with a Capsule Wasm function in less than 100 lines of code](https://www.wasm.builders/k33g_org/create-a-gitlab-bot-with-a-capsule-wasm-function-in-less-than-100-lines-of-code-de5)
-- [Deploy Capsule Functions on Fly.io in a flash](https://www.wasm.builders/k33g_org/deploy-capsule-functions-on-flyio-in-a-flash-17l5)
-- [A simple calc serverless function with Capsule, NATS and Node.js](https://www.wasm.builders/k33g_org/a-simple-calc-serverless-function-with-capsule-nats-and-nodejs-2mnk)
-- [Host and Serve a Lit SPA with WebAssembly (and Capsule)](https://www.wasm.builders/k33g_org/host-and-serve-a-lit-spa-with-webassembly-and-capsule-52ak)
-- [Capsule, my personal wasm FaaS (part 2)](https://www.wasm.builders/k33g_org/capsule-my-personal-wasm-faas-part-2-140k)
-- [Capsule, my personal wasm multi-tools knife (part 1)](https://www.wasm.builders/k33g_org/capsule-my-personal-wasm-multi-tools-knife-part-1-3eoa)
-- [Extend Wasm with host functions thanks to Wazero](https://www.wasm.builders/k33g_org/extend-wasm-with-host-functions-thanks-to-wazero-3n0n)
-- [An essay on the bi-directional exchange of strings between the Wasm module (with TinyGo) and Node.js (with WASI support)](https://www.wasm.builders/k33g_org/an-essay-on-the-bi-directional-exchange-of-strings-between-the-wasm-module-with-tinygo-and-nodejs-with-wasi-support-3i9h)
+### Simplism
+
+- [Simplism, the straightforward way for a Wasm FaaS on Clever Cloud](https://k33g.hashnode.dev/simplism-faas-on-clever-cloud)
+- [Deploy a wasm function on Koyeb in a blast with Simplism](https://k33g.hashnode.dev/deploy-a-wasm-function-on-koyeb-in-a-blast-with-simplism)
+
+### Wasm - Wasi
+
+- Series: [WASI and Node.js](https://k33g.hashnode.dev/series/wasi-nodejs)
+  - WASI, first steps
+  - WASI, Communication between Node.js and WASM modules with the WASM buffer memory
+  - WASI, Communication between Node.js and WASM modules, another way, with STDIN and STDOUT
+
+
+
+[^1]: Wazero is a project from **[Tetrate](https://tetrate.io/)**
+[^2]: Extism is a project from **[Dylibso](https://dylibso.com/)**
 
